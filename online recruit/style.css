@@ -381,9 +381,14 @@ form #btn {
         top: 19%;
     }
     #b-flex{
-        margin-left: 150px;
+        /* margin-left: 150px; */
     }
     #close{
         display: none;
+    }
+    #loginpage {
+       
+        width: 30%;
+        left: 30%;
     }
 }
