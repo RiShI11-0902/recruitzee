@@ -72,12 +72,12 @@ function login() {
   if (!exists) {
     alert("Register first");
   } else {
-    window.location.href = "http://127.0.0.1:5500/searchCandidate.html";
+    window.location.href = "https://recruitzee.netlify.app/searchCandidate.html";
   }
 }
 
 function logout() {
-  window.location.href = "http://127.0.0.1:5500/index.html";
+  window.location.href = "https://recruitzee.netlify.app//index.html";
 }
 
 
