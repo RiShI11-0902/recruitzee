@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+
+        <div id="logo">
+            Recruitzee.
+        </div>
+        <div>
+            <ul>
+                <li>Home</li>
+                <li onclick="show()">Login</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="">
+            <img id="ham"  src="assets/icon-menu.svg" alt="">
+            <img id="close" class="inactive" src="assets/icon-close.svg" alt="">
+        </div>
+
+        <div id="loginpage" class="inactive">
+            <img id="mob-close" class="active" src="assets/icon-close.svg" alt="">
+            <form action="" id="myForm">
+                <label for="Name">
+                    Username
+                </label>
+                <input type="text" id="inUser" value="" placeholder="Enter User name">
+                <label for="Name">
+                    Password
+                </label>
+                <input type="password" id="inPass" value="" placeholder="Enter Password">
+                <div style="display: flex; padding: 10px;">
+                    <button onclick="register()" id="btn">
+                         Register
+                    </button>
+                    <button onclick="login()" id="btn">
+                        Login
+                   </button>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <div id="mobile-nav" class="inactive">
+        <ul>
+            <li>Home</li>
+            <li  onclick="show()">Login</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div id="hero-section">
+        <div id="main-head">
+            <h2>
+                Hire the best and watch your business grow.
+            </h2>
+        </div>
+        <button style="margin-left: 20px; padding: 10px; border: none ; font-weight: bold;" onclick="show()">
+           Register / Login Now
+        </button>
+    </div>
+    <section id="features">
+        <div>
+            <h2 style="margin-top: -90px;">
+                Recruitzee, Built For You
+            </h2>
+
+            <p class="sub-head">Some <span>Key</span> Features that make a difference</p>
+
+            <div id="kf-list">
+                <div class="feature">
+                    <img src="assets/k1.jpg" alt="" srcset="">
+                    <h1>Easy Management</h1>
+                    <p>Manage All your job posting and candidates without any hassle</p>
+                </div>
+                <div class="feature">
+                    <img src="assets/k2.jpg" alt="" srcset="">
+                    <h1>Search Candidtae Seamlessly</h1>
+                    <p>Search the candidates according to their job profiles and locations</p>
+                </div>
+                <div class="feature" id="feature3">
+                    <img src="assets/k3.png" alt="" srcset="">
+                    <h1>Easy to use Inteface</h1>
+                    <p>The most uniques yet easy to use interface</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section style="background-color: rgb(227, 244, 251);" id="benefits">
+        <h2>Recruitzee comes with BENEFITS</h2>
+        <div id="b-flex">
+            <div class="benefit-list">
+                <div class="b1">
+                    <span>1.</span>  
+                    <p>"Reduce time-to-hire by 50%" </p>
+                </div>
+                <div id="b2" class="b1">
+                    <span>2.</span>  
+                    <p>"Cost Saving"</p>
+                </div>
+                <div id="b3" class="b1">
+                    <span>3.</span>  
+                    <p>"Compliance and Security"</p>
+                </div>
+                <div id="b4" class="b1">
+                    <span>4.</span>  
+                    <p>"Improved Decision-Making"</p>
+                </div>
+                <div id="b5" class="b1">
+                    <span>5.</span>  
+                    <p>"Expanded Candidate Pool"</p>
+                </div>
+                <div id="b6" class="b1">
+                    <span>6.</span>  
+                    <p>"Data-Driven Insights:"</p>
+                </div>
+            </div>
+            <div>
+                <img src="assets/benefits.png" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+  <script src="App.js"></script>
+
+</html>

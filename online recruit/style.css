@@ -1,0 +1,389 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 20px 15px 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+ul li {
+    list-style: none;
+    padding: 3px 22px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+ul li:hover{
+    color: rgb(151, 151, 245);
+}
+
+#mobile-nav ul {
+    position: absolute;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    top: 40;
+    left: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Hero Section */
+
+#main-head {
+    font-size: 1.5rem;;
+    width: 30rem;
+    padding: 5rem;
+    color: white;
+}
+
+#main-head::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 160px;
+    left: 60px;
+    z-index: -1;
+    opacity: 0.9;
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+}
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+}
+
+button {
+    width: fit-content;
+}
+
+#hero-section::before {
+    content: " ";
+    background-image: url(assets/home.jpg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+/* features */
+#features,
+#benefits {
+    /* margin-top: 45rem; */
+    background-color: rgb(227, 244, 251);
+    width: 100%;
+}
+
+.sub-head {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 10px;
+}
+
+#kf-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    align-items: center;
+    margin-right: 50px;
+}
+
+img {
+    width: 60%;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.feature p {
+    width: 50%;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: x-large;
+}
+
+.feature h1 {
+    margin-top: 10px;
+}
+
+#feature3 {
+    width: 26rem;
+}
+
+/* benefits */
+
+#benefits {
+    padding: 3rem;
+    
+}
+
+#benefits .b1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.benefit-list {
+    margin-top: 50px;
+}
+
+#b2 span,
+p {
+    text-align: left;
+    align-items: end;
+}
+
+#b-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: 100px;
+}
+
+
+#loginpage {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 30%;
+    height: 60%;
+    background-color: rgb(55, 183, 234);
+}
+
+#mob-close {
+    width: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding: 20px;
+}
+
+label {
+    font-size: x-large;
+}
+
+input,
+label {
+    margin-top: 10px;
+    width: 20rem;
+    padding: 10px;
+}
+
+form #btn {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: rgb(218, 226, 236);
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+    border-radius: 20rem;
+    cursor: pointer;
+}
+
+@media (min-width: 280px) {
+
+    #hero-section::before{
+        position: absolute;
+        background-image: url(assets/home-mobile.jpg);
+        opacity: 0.9;
+    }
+    ul {
+        display: none;
+    }
+
+    #main-head {
+        font-size: medium;
+        width: 20rem;
+        padding: 3rem;
+    }
+    #main-head::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 160px;
+        left: 60px;
+        z-index: -1;
+        opacity: 0.9;
+        background-size: cover;
+        width: 50%;
+        height: 50%;
+    }
+    #loginpage {
+        left: 10%;
+        width: 80%;
+    }
+
+    input,
+    label {
+        width: 15rem;
+    }
+    #kf-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    #features{
+        padding-top: 0;
+    }
+    #benefits{
+        background-color: rgb(227, 244, 251);
+    }
+    #b-flex{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    #benefits .b1{
+        font-size: 1.2rem;
+    }
+    #list{
+        padding: 20px;
+        margin-top: 10px;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    #search{
+        margin-left: 50px;
+        width: fit-content;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    #hero-section::before{
+        background-image: url(assets/home.jpg.jpg);
+        opacity: 0.9;
+        position: fixed;
+    }
+    #main-head {
+        font-size: x-large;
+        width: 30rem;
+        padding: 3rem;
+        color: black;
+    }
+    #main-head::before{
+        
+        background: none;
+        
+    }
+
+    ul {
+        display: flex;
+    }
+
+    #ham {
+        display: none;
+    }
+    #kf-list {
+       
+        flex-direction: row;
+       
+    }
+    #b-flex {
+        flex-direction: row;
+    }
+    #benefits {
+        padding: 3rem;
+        height: 100vh;
+    }
+    #benefits .b1{
+        font-size: 2rem;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        padding: 10px;
+        margin-top: 10px;
+        width: 100%;
+        font-size: x-large;
+    }
+    #list{
+        display: grid;
+        grid-template-columns:400px 400px 400px;
+        width: fit-content;
+        position: absolute;
+        left: 2rem;
+        top: 10rem;
+        row-gap: 10px;
+        column-gap: 20px;
+    }
+    #search{
+        width: 30%;
+        position: absolute;
+        left: 30%;
+        top: 19%;
+    }
+    #b-flex{
+        margin-left: 150px;
+    }
+    #close{
+        display: none;
+    }
+}

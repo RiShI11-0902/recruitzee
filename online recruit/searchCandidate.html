@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            Recruitzee.
+        </div>
+        <div>
+            <ul>
+                <li>Home</li>
+                <li onclick="logout()">Logout</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="">
+            <img id="ham"  src="assets/icon-menu.svg" alt="">
+            <img id="close" class="inactive" src="assets/icon-close.svg" alt="">
+        </div>
+
+        <div id="loginpage" class="inactive">
+            <img id="mob-close" class="active" src="assets/icon-close.svg" alt="">
+            <form action="" id="myForm">
+                <label for="Name">
+                    Username
+                </label>
+                <input type="text" id="inUser" value="" placeholder="Enter User name">
+                <label for="Name">
+                    Password
+                </label>
+                <input type="password" id="inPass" value="" placeholder="Enter Password">
+                <div style="display: flex; padding: 10px;">
+                    <button onclick="register()" id="btn">
+                         Register
+                    </button>
+                    <button onclick="logout()" id="btn">
+                        Logout
+                   </button>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div id="mobile-nav" class="inactive">
+        <ul>
+            <li>Home</li>
+            <li  onclick="logout()">Logout</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div id="searchdiv" >
+        <input   type="text" placeholder="Search for a role or Location" name="" id="search">
+        <span></span>
+    </div>
+
+    <div id="list">
+        
+    </div>
+</body>
+<script src="App.js"></script>
+
+</html>
